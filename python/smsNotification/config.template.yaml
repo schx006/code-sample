@@ -1,0 +1,11 @@
+# nom du fichier : config.yaml
+
+# configuration pour :
+#    sendSms() — module smsNotification.py
+send_sms:
+  user_id: "_à_compléter_"
+  api_key: "_à_compléter_"
+
+# juste pour compliquer les choses…
+# … ou pouvoir ajouter des fonctionnalités plus tard
+misc:
