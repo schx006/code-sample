@@ -33,7 +33,6 @@ def rgbColorToNameTranslate(rgbColor)
 				else
 					foo = true
 				end
-
 			end
 		end
 		# ajout de la couleur au tableau
