@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 
-- 📜 I use this repository for store and archive some scripts of mine… 
+- 📜 I use this repository for store and archive some small programs of mine… 
 - 📁 A root repertory for each language I can use.
 
 
