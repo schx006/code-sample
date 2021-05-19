@@ -72,7 +72,7 @@ def readColorCode():
 
 
 
-# main function
+# main function • fonction principale
 def rgbColorToName():
 	myColorCode = readColorCode()
 	myColorName = rgbColorToNameTranslate(myColorCode)
