@@ -17,7 +17,6 @@ def rgbColorToNameTranslate(rgbColor):
 		# pour chaque ligne…
 		for l in f:
 			# lecture du code de la couleur, en fin de ligne
-			# attention, le dernier caractère est un "saut de ligne"
 			code = l[len(l) - 7:len(l) - 1]
 			color = ''
 			# si le code correspond à la requête…
