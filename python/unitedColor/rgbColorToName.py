@@ -4,7 +4,7 @@
 
 
 def rgbColorToNameTranslate(rgbColor):
-	# cette fonction retourne une liste de noms
+	# cette fonction retourne un tableau de noms
 	
 	# le fichier de correspondance des couleurs est ICI
 	colorRefPath = '../../'
@@ -29,7 +29,7 @@ def rgbColorToNameTranslate(rgbColor):
 						color = color + c
 					else:
 						end = True
-			# ajout de la couleur à la liste
+			# ajout de la couleur au tableau
 			if len(color) != 0:
 				colorAlias.append(color)
 	return colorAlias
@@ -39,7 +39,7 @@ def rgbColorToNameTranslate(rgbColor):
 def verifyCode(rgbColor):
 	# vérification de la validité de la saisie au clavier
 	
-	# liste des caractères autorisés décrire un nombre héxadécimal
+	# liste des caractères autorisés pour écrire un nombre héxadécimal
 	hexaDigit ='0123456789abcdef'
 	# si la longueur n'est pas 6 : erreur de saisie…
 	if len(rgbColor) != 6:
@@ -59,15 +59,15 @@ def verifyCode(rgbColor):
 def readColorCode():
 	# saisie au clavier du "code couleur" héxadécimal
 	
-	boo = False
-	# tant que 'boo' est faux:
-	while not boo:
+	foo = False
+	# tant que 'foo' est faux:
+	while not foo:
 		rgbColor = input('Please, enter an hexadecimal RGB color: ')
 		# transformation des majuscules en minuscules
 		rgbColor = rgbColor.lower()
 		# vérification de la saisie : 6 "digits" hégadécimaux…
-		boo = verifyCode(rgbColor)
-	# 'boo' est vrai :
+		foo = verifyCode(rgbColor)
+	# 'foo' est vrai :
 	# fin de la boucle
 	return rgbColor
 
