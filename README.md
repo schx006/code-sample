@@ -41,7 +41,7 @@ Alternative version :
       ```
       sha256sum /path/to/file
       ```   
-5. Verify _SHA256 checksum_ on **Windows**,   
+5. Verify _SHA256 checksum_ on **MS Windows**,   
    in a "CMD" window :   
    ```
    CertUtil -hashfile C:\path\to\file SHA256
