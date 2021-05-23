@@ -8,6 +8,9 @@
 % de la langue choisie (français)
 %\usepackage{color}
 % permet l'utilisation de la couleur dans le texte
+%\usepackage[top=4cm, bottom=4cm,
+%left=2.5cm, right=2.5cm]{geometry}
+% permet de définir les marges
 
 \documentclass[french, 12pt, twoside, a4paper]{article}
 % classe du document :
@@ -20,3 +23,15 @@
 % twoside (impression recto-verso)
 % a4paper (format du papier A4)
 
+\title{Titre du document}
+\author{Nom de l'auteur \thanks{email@xs-net.io} \\
+Fonction de l'auteur \\
+Établissement (par exemple)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+…
+
+\end{document}
