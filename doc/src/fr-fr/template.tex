@@ -1,0 +1,90 @@
+\documentclass[frenchb, 12pt, twoside, a4paper]{article}
+% Définition du document
+% Classes : book, report, thesis, article, letter, beamer…
+% Options :
+%   frenchb   (module linguistique utilisée pour la typographie)
+%   12pt      (taille de la police, par défaut 10pt)
+%   twoside   (impression recto-verso)
+%   a4paper   (format du papier : A4)
+
+
+%% Préambule
+
+\usepackage[utf8]{inputenc}      % Encodage utf-8
+\usepackage[T1]{fontenc}         % Règles de césure avec les caractères accentués
+\usepackage{babel}               % Conventions typographiques linguistiques française
+                                 % inutile de préciser l'option [frenchb] car celle-ci
+                                 % est déjà déclarée par "\documentclass"
+\usepackage{lmodern}             % Police standard : "Latin Modern"
+                                 % alternative à la police d'origine : Computer Modern
+\usepackage[top=2.5cm, bottom=2.5cm, 
+  left=2cm, right=2cm]{geometry} % Définition des marges
+%\usepackage{color}               % Mise en couleur du texte
+%\usepackage{graphicx}            % Insertion d'images (format jpeg ou png uniquement)
+
+
+% Titre
+\title{Titre du document}
+
+% Auteur
+\author{Prénom \textsc{Nom de l'auteur} \thanks{email@xs-net.io} \\
+Fonction de l'auteur \\
+Établissement (par exemple)}
+
+% Date
+\date{\today}                           % document daté du jour de la compilation
+
+
+%% Fin du préambule
+
+\begin{document}
+
+%% Page de garde
+\maketitle                              % insertion du titre
+
+%% Sommaire -- Penser à compiler deux fois
+{
+\renewcommand{\contentsname}{Sommaire}  % lorsqu'elle est placée en début de document, 
+                                        % la "Table des matières" s'appelle "Sommaire"
+\tableofcontents                        % insertipon du sommaire
+}
+
+
+%% Résumé
+% Changer le titre du résumé
+%\renewcommand{\abstractname}{\Large{}\textbf{Résumé}}
+% Résumé
+\begin{abstract}
+Court texte de présentation.
+\end{abstract}
+% Classe report : sur une page à part
+% Classe article : sur la page de garde (si pas de newpage)
+
+% Si besoin : saut de page et initialisation du compteur de pages
+\clearpage\setcounter{page}{2}
+
+
+\section*{Introduction}
+% '*' permet de ne pas numéroter l'entrée
+% dans la table des matères
+
+…
+
+\section{Un chapitre}
+…
+
+\subsection{Un sous-chapitre}
+…
+\paragraph{Sous-partie de sous-chapitre}
+…
+
+\subsection{Autre sous-chapitre}
+…
+
+%\include{myFile.tex}
+% importation d'un fragment du document depuis un autre fichier
+% les fichiers appelés doivent être dans le même répertoire que
+% celui qui l'appelle
+
+
+\end{document}
