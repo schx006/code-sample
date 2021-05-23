@@ -1,15 +1,11 @@
-### Hi there 👋
-
+# Hi there 👋
 
 - 📜 I use this repository for store and archive some small programs of mine… 
 - 📁 A root repertory for each language I can use.
 
 
 
-
----
-
-### Funny quotes 🥷
+# Funny quotes 🥷
 
 ```css
 
@@ -31,6 +27,29 @@ Alternative version :
 ```
 
 
+
+# Memorandum ✍️
+
+
+1. Verify _SHA256 checksum_ on **Mac OS**,   
+   in a "Terminal" window :   
+   ```
+   shasum -a 256 /path/to/file
+   ```
+3. Verify _SHA256 checksum_ on **Linux**,   
+   in a "Term" window :   
+      ```
+      sha256sum /path/to/file
+      ```   
+5. Verify _SHA256 checksum_ on **MS Windows**,   
+   in a "CMD" window :   
+   ```
+   CertUtil -hashfile C:\path\to\file SHA256
+   ```
+   in a "PowerShell" window :   
+   ```
+   Get-FileHash C:\path\to\file -Algorithm SHA256
+   ```
 
 
 
