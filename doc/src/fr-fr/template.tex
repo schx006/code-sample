@@ -1,0 +1,75 @@
+\usepackage[utf8]{inputenc}
+% permet à l'éditeur de texte d'interpréter les
+% caractères supportés par l'encodage utf8
+\usepackage[T1]{fontenc}
+% permet la lecture des caractères spéciaux
+\usepackage[french]{babel}
+% le texte généré suivra la convention
+% de la langue choisie (français)
+
+%\usepackage{color}
+% permet l'utilisation de la couleur dans le texte
+
+%\usepackage[top=4cm, bottom=4cm,
+%left=2.5cm, right=2.5cm]{geometry}
+% permet de définir les marges
+
+%\usepackage{graphicx}
+% permet d'insérer des images (format jpeg ou png uniquement)
+% le fichier de l'image doit être dans le même répertoire
+% que le fichier .tex qui l'insère par la directive :
+% "\includegraphics{nom_fichier_img}"
+% on peut aussi spécifier l'échelle et l'angle :
+% "\includegraphics[scale=0.3, angle=20]{nom_fichier_img}"
+
+
+
+\documentclass[french, 12pt, twoside, a4paper]{article}
+% classe du document :
+% article (à utiliser pour des textes courts)
+% d'autres classes sont :
+% book, report, letter, beamer…
+% options :
+% french (langue utilisée pour la typographie)
+% 12pt (taille de la police, par défaut 10pt)
+% twoside (impression recto-verso)
+% a4paper (format du papier A4)
+
+
+\title{Titre du document}
+\author{Nom de l'auteur \thanks{email@xs-net.io} \\
+Fonction de l'auteur \\
+Établissement (par exemple)}
+\date{\today}
+
+
+
+\begin{document}
+\maketitle     % insertion du titre
+%\tableofcontents     % insertipon de la table des matières
+
+
+\section*{Introduction}
+% '*' permet de ne pas numéroter l'entrée
+% dans la table des matères
+
+…
+
+\section{Un chapitre}
+…
+
+\subsection{Un sous-chapitre}
+…
+\paragraph{Sous-partie de sous-chapitre}
+…
+
+\subsection{Autre sous-chapitre}
+…
+
+%\include{myFile.tex}
+% importation d'un fragment du document depuis un autre fichier
+% les fichiers appelés doivent être dans le même répertoire que
+% celui qui l'appelle
+
+
+\end{document}
