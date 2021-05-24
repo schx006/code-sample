@@ -1,6 +1,7 @@
 <!-- balises linguistiques -->
 
-Exemples de localisation linguistique avec les codes ISO 639-1 à deux lettres
+Utilisation de la localisation linguistique (régionalisation)
+avec les codes ISO 639-1 à deux lettres
 
 | Code  | Variante linguistique |
 | ---   | --- |
