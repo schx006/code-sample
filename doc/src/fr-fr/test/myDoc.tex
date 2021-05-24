@@ -8,8 +8,7 @@
 %   a4paper   (format du papier : A4)
 
 
-%% Préambule
-
+%% PRÉAMBULE
 \usepackage[utf8]{inputenc}      % Encodage utf-8
 \usepackage[T1]{fontenc}         % Règles de césure avec les caractères accentués
 \usepackage{babel}               % Conventions typographiques linguistiques française
@@ -24,22 +23,28 @@
 %\usepackage{amsmath}             % Extension pour l'environnement "Mathématiques"
 %\usepackage{amssymb}             % Extension pour les symboles mathématiques
 
+
 % Titre
 \title{Titre du document \LaTeX{}}
 
 % Auteur(s)
 \author{
-  Prénom \textsc{Patronyme}
+  Jean \textsc{Tartempion}
   \thanks{email@xs-net.io} \\
   Geek \\
-  France}
+  France
+  \and
+  John \textsc{Doe} \\
+  Hacker \\
+  Nulle-Part
+  }
 
 % Date
 \date{\today}                           % document daté du jour de la compilation
 
 
-%% Fin du préambule
-
+%% FIN DU PRÉAMBULE
+%% DÉBUT DU DOCUMENT
 \begin{document}
 
 %% Page de garde
@@ -100,4 +105,5 @@
 % La Conclusion → fichier "conclusion.tex"
 \insclude{conclusion.tex}
 
+%% FIN DU DOCUMENT
 \end{document}
