@@ -27,7 +27,7 @@
 \title{Titre du document \latex{}}
 
 % Auteur
-\author{Xavier, \textsc{aka schxOO6} \thanks{schx006@xs-net.io} \\
+\author{Xavier, aka \textsc{schxOO6} \thanks{schx006@xs-net.io} \\
 Geek}
 
 % Date
@@ -56,14 +56,16 @@ Geek}
 \begin{abstract}
 Court texte de présentation : \\
 Ce document permet de faire différents essai d'utilisation
-du langage \latex{}.
+du langage \LaTeX{}.
 
 Il a aussi pour objectif de tester le compilateur \latex{}
-dans différents environnement \em{Mac OS, Linux, MS Windows},
-grâce à la disponibilité des fichiers sources sur le \enquote{repositoru Github}.
+dans différents environnements 
+\emph{Mac OS\textsuperscript{®}, GNU Linux, MS Windows\textsuperscript{®}},
+grâce à la disponibilité des fichiers sources sur le 
+\enquote{repositoru Github\textsuperscript{®}}.
 \end{abstract}
-% Classe report : sur une page à part
-% Classe article : sur la page de garde (si pas de newpage)
+% Classe report :  sur une page à part
+% Classe article : sur la page de garde (si pas de "newpage"")
 
 % Si besoin : saut de page et initialisation du compteur de pages
 %\clearpage\setcounter{page}{2}
@@ -73,7 +75,8 @@ grâce à la disponibilité des fichiers sources sur le \enquote{repositoru Gith
 % '*' permet de ne pas numéroter l'entrée
 % dans la table des matères
 
-…
+% L'introduction → fichier "intro.tex"
+\insclude{intro.tex}
 
 \section{Un chapitre}
 …
@@ -86,10 +89,8 @@ grâce à la disponibilité des fichiers sources sur le \enquote{repositoru Gith
 \subsection{Autre sous-chapitre}
 …
 
-%\include{myFile.tex}
-% importation d'un fragment du document depuis un autre fichier
-% les fichiers appelés doivent être dans le même répertoire que
-% celui qui l'appelle
-
+\section*{Conclusion}
+% La Conclusion → fichier "conclusion.tex"
+\insclude{conclusion.tex}
 
 \end{document}
