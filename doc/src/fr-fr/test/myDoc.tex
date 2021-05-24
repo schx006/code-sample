@@ -21,14 +21,18 @@
   left=2cm, right=2cm]{geometry} % Définition des marges
 %\usepackage{color}               % Mise en couleur du texte
 %\usepackage{graphicx}            % Insertion d'images (format jpeg ou png uniquement)
-
+%\usepackage{amsmath}             % Extension pour l'environnement "Mathématiques"
+%\usepackage{amssymb}             % Extension pour les symboles mathématiques
 
 % Titre
 \title{Titre du document \LaTeX{}}
 
-% Auteur
-\author{Prénom \textsc{Patronyme} \thanks{email@xs-net.io} \\
-Geek}
+% Auteur(s)
+\author{
+  Prénom \textsc{Patronyme}
+  \thanks{email@xs-net.io} \\
+  Geek \\
+  France}
 
 % Date
 \date{\today}                           % document daté du jour de la compilation
@@ -54,18 +58,18 @@ Geek}
 %\renewcommand{\abstractname}{\Large{}\textbf{Résumé}}
 % Résumé
 \begin{abstract}
-Court texte de présentation : \\
-Ce document permet de faire différents essai d'utilisation
-du langage \LaTeX{}.
-
-Il a aussi pour objectif de tester le compilateur \LaTeX{}
-dans différents environnements 
-\emph{Mac OS\textsuperscript{®}, GNU Linux, MS Windows\textsuperscript{®}},
-grâce à la disponibilité des fichiers sources sur le 
-\enquote{repository Github\textsuperscript{®}}.
-
-Bien sûr, ce document n'a ni queue, ni tête ! \\
-\Large{🙃}
+  Court texte de présentation : \\
+  Ce document permet de faire différents essai d'utilisation
+  du langage \LaTeX{}.
+  
+  Il a aussi pour objectif de tester le compilateur \LaTeX{}
+  dans différents environnements 
+  \emph{Mac OS\textsuperscript{®}, GNU Linux, MS Windows\textsuperscript{®}},
+  grâce à la disponibilité des fichiers sources sur le 
+  \enquote{repository Github\textsuperscript{®}}.
+  
+  Bien sûr, ce document n'a ni queue, ni tête ! \\
+  \Large{🙃}
 \end{abstract}
 % Classe report :  sur une page à part
 % Classe article : sur la page de garde (si pas de "newpage"")
