@@ -1,7 +1,8 @@
 <!-- balises linguistiques -->
 
 Utilisation de la localisation linguistique (régionalisation)
-avec les codes ISO 639-1 à deux lettres
+par association du code ISO 639-1 à deux lettres
+et du code ISO 3166 alpha-2
 
 | Code  | Variante linguistique |
 | ---   | --- |
