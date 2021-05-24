@@ -1,2 +1,7 @@
+# LaTex compilator env
+*.toc
+# Mac OS finder
 .DS_Store
+# Python exec env
 __pycache__
+
