@@ -16,12 +16,16 @@
                                  % est déjà déclarée par "\documentclass"
 \usepackage{lmodern}             % Police standard : "Latin Modern"
                                  % alternative à la police d'origine : Computer Modern
+\usepackage{subfiles}            % Permets de scinder chaque partie dans un fichier…
+                                 % … et de les regrouper dans un sous-répertoire
 \usepackage[top=2.5cm, bottom=2.5cm, 
   left=2cm, right=2cm]{geometry} % Définition des marges
 %\usepackage{color}               % Mise en couleur du texte
 %\usepackage{graphicx}            % Insertion d'images (format jpeg ou png uniquement)
+%\grapicspath{img/}               % Sous-répertoire pour les images : "img/"
 %\usepackage{amsmath}             % Extension pour l'environnement "Mathématiques"
 %\usepackage{amssymb}             % Extension pour les symboles mathématiques
+\usepackage{comment}             % Permet de "commenter" des blocs entiers…
 %\usepackage{lipsum}              % Texte factice "Lorem Ipsum"
 
 
@@ -31,10 +35,10 @@
 % Auteur(s)
 \author{
   Prénom \textsc{Nom de l'auteur} 
-  \thanks{email@xs-net.io} \\           % Adresse mail en "pied de page"
+%  \thanks{funded by … team} \\           % Note de bas de page de "remerciement"
   Fonction de l'auteur \\
   Établissement (par exemple) \\
-%  \texttt{email@xs-net.io}              % Alternative pour l'adresse mail
+%  \texttt{email@xs-net.io}              % Adresse mail (police "teletype")
 %  \and                                  % Ajout d'un autre auteur
   }
 
@@ -73,18 +77,16 @@ Court texte de présentation.
 
 \section*{Introduction}
 % '*' permet de ne pas numéroter l'entrée
-% dans la table des matères
-
-Ici, c'est l'intro…
+% dans la table des matières
+\subfile{sections/introduction}           % les différentes parties sont dans les
+                                          % fichiers du sous-répertoire "sections/"
 
 \section{Un chapitre}
-
-%\include{myFile.tex}
-% importation d'un fragment du document depuis un autre fichier
-% les fichiers appelés doivent être dans le même répertoire que
-% celui qui l'appelle
+\subfile{sections/section1}
 
 
+
+\begin{comment} Les 9 lignes suivantes sont en "commentaire", ignorées par le compilateur.
 \subsection{Un sous-chapitre}
 …
 \paragraph{Sous-partie de sous-chapitre}
@@ -93,7 +95,7 @@ Ici, c'est l'intro…
 
 \subsection{Autre sous-chapitre}
 …
-
+\end{comment}
 
 %% FIN DU DOCUMENT
 \end{document}
