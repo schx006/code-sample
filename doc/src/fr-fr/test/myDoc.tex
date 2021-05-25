@@ -16,12 +16,14 @@
                                  % est déjà déclarée par "\documentclass"
 \usepackage{lmodern}             % Police standard : "Latin Modern"
                                  % alternative à la police d'origine : Computer Modern
+\usepackage{subfiles}            % Permets de scinder chaque partie dans un fichier…
 \usepackage[top=2.5cm, bottom=2.5cm, 
   left=2cm, right=2cm]{geometry} % Définition des marges
 %\usepackage{color}               % Mise en couleur du texte
 %\usepackage{graphicx}            % Insertion d'images (format jpeg ou png uniquement)
 %\usepackage{amsmath}             % Extension pour l'environnement "Mathématiques"
 %\usepackage{amssymb}             % Extension pour les symboles mathématiques
+\usepackage{comment}             % Permet de "commenter" des blocs entiers…
 \usepackage{lipsum}              % Texte factice "Lorem Ipsum"
 
 
@@ -31,11 +33,12 @@
 % Auteur(s)
 \author{
   Jean \textsc{Tartempion}
-  \thanks{email@xs-net.io} \\
   Geek \\
-  France
+  France \\
+  \texttt{email@xs-net.io} \\           % Adresse mail (police "teletype")
   \and
   John \textsc{Doe} \\
+  \thanks{Financé par Anonymous.} \\    % Note de bas de page de "remerciement"
   Hacker \\
   Nulle-Part
   }
@@ -78,7 +81,7 @@
   \Large{🙃}
 \end{abstract}
 % Classe report :  sur une page à part
-% Classe article : sur la page de garde (si pas de "newpage"")
+% Classe article : sur la page de garde (si pas de "newpage")
 
 % Si besoin : saut de page et initialisation du compteur de pages
 %\clearpage\setcounter{page}{2}
@@ -89,11 +92,12 @@
 % dans la table des matères
 
 % L'introduction → fichier "intro.tex"
-\insclude{intro.tex}
+\subfile{sections/intro}
 
 \section{Un chapitre}
-…
+\subfile{sections/sect1}
 
+\begin{comment}
 \subsection{Un sous-chapitre}
 …
 \paragraph{Sous-partie de sous-chapitre}
@@ -101,10 +105,11 @@
 
 \subsection{Autre sous-chapitre}
 …
+\end{comment}
 
 \section*{Conclusion}
 % La Conclusion → fichier "conclusion.tex"
-\insclude{conclusion.tex}
+\subfile{sections/conclus}
 
 %% FIN DU DOCUMENT
 \end{document}
