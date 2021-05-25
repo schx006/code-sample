@@ -22,8 +22,8 @@
 %\usepackage{color}               % Mise en couleur du texte
 %\usepackage{graphicx}            % Insertion d'images (format jpeg ou png uniquement)
 %\grapicspath{images/}            % Sous-répertoire pour les images : "images/"
-%\usepackage{amsmath}             % Extension pour l'environnement "Mathématiques"
-%\usepackage{amssymb}             % Extension pour les symboles mathématiques
+\usepackage{amsmath}             % Extension pour l'environnement "Mathématiques"
+\usepackage{amssymb}             % Extension pour les symboles mathématiques
 \usepackage{comment}             % Permet de "commenter" des blocs entiers…
 \usepackage{lipsum}              % Texte factice "Lorem Ipsum"
 
@@ -101,8 +101,14 @@
 \begin{comment}
 \subsection{Un sous-chapitre}
 …
-\paragraph{Sous-partie de sous-chapitre}
-…
+\paragraph{Exemple de fonction récursive}
+
+La fonction emph{factorielle} est l'exemple typique de la fonction récursive. \\
+Voici sa définition :
+
+\begin{displaymath}
+	\forall n \in \mathbb{N}^{*} : n! = n \times (n - 1) et 1! = 1
+\end{displaymath}
 
 \subsection{Autre sous-chapitre}
 …
