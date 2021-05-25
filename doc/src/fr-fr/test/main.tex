@@ -1,0 +1,115 @@
+\documentclass[frenchb, 12pt, twoside, a4paper]{article}
+% Définition du document
+% Classes : book, report, thesis, article, letter, beamer…
+% Options :
+%   frenchb   (module linguistique utilisée pour la typographie)
+%   12pt      (taille de la police, par défaut 10pt)
+%   twoside   (impression recto-verso)
+%   a4paper   (format du papier : A4)
+
+
+%% PRÉAMBULE
+\usepackage[utf8]{inputenc}      % Encodage utf-8
+\usepackage[T1]{fontenc}         % Règles de césure avec les caractères accentués
+\usepackage{babel}               % Conventions typographiques linguistiques française
+                                 % inutile de préciser l'option [frenchb] si celle-ci
+                                 % est déjà déclarée par "\documentclass"
+\usepackage{lmodern}             % Police standard : "Latin Modern"
+                                 % alternative à la police d'origine : Computer Modern
+\usepackage{subfiles}            % Permets de scinder chaque partie dans un fichier…
+\usepackage[top=2.5cm, bottom=2.5cm, 
+  left=2cm, right=2cm]{geometry} % Définition des marges
+%\usepackage{color}               % Mise en couleur du texte
+%\usepackage{graphicx}            % Insertion d'images (format jpeg ou png uniquement)
+%\usepackage{amsmath}             % Extension pour l'environnement "Mathématiques"
+%\usepackage{amssymb}             % Extension pour les symboles mathématiques
+\usepackage{comment}             % Permet de "commenter" des blocs entiers…
+\usepackage{lipsum}              % Texte factice "Lorem Ipsum"
+
+
+% Titre
+\title{Titre du document \LaTeX{}}
+
+% Auteur(s)
+\author{
+  Jean \textsc{Tartempion}
+  Geek \\
+  France \\
+  \texttt{email@xs-net.io} \\           % Adresse mail (police "teletype")
+  \and
+  John \textsc{Doe} \\
+  \thanks{Financé par Anonymous.} \\    % Note de bas de page de "remerciement"
+  Hacker \\
+  Nulle-Part
+  }
+
+% Date
+\date{\today}                           % document daté du jour de la compilation
+
+
+%% FIN DU PRÉAMBULE
+%% DÉBUT DU DOCUMENT
+\begin{document}
+
+%% Page de garde
+\maketitle                              % insertion du titre
+
+%% Sommaire -- Penser à compiler deux fois
+{
+\renewcommand{\contentsname}{Sommaire}  % lorsqu'elle est placée en début de document, 
+                                        % la "Table des matières" s'appelle "Sommaire"
+\tableofcontents                        % insertipon du sommaire
+}
+
+
+%% Résumé
+% Changer le titre du résumé
+%\renewcommand{\abstractname}{\Large{}\textbf{Résumé}}
+% Résumé
+\begin{abstract}
+  Court texte de présentation : \\
+  Ce document permet de faire différents essai d'utilisation
+  du langage \LaTeX{}.
+  
+  Il a aussi pour objectif de tester le compilateur \LaTeX{}
+  dans différents environnements 
+  \emph{Mac OS\textsuperscript{®}, GNU Linux, MS Windows\textsuperscript{®}},
+  grâce à la disponibilité des fichiers sources sur le 
+  \enquote{repository Github\textsuperscript{®}}.
+  
+  Bien sûr, ce document n'a ni queue, ni tête ! \\
+  \Large{🙃}
+\end{abstract}
+% Classe report :  sur une page à part
+% Classe article : sur la page de garde (si pas de "newpage")
+
+% Si besoin : saut de page et initialisation du compteur de pages
+%\clearpage\setcounter{page}{2}
+
+
+\section*{Introduction}
+% '*' permet de ne pas numéroter l'entrée
+% dans la table des matères
+
+% L'introduction → fichier "intro.tex"
+\subfile{sections/intro}
+
+\section{Un chapitre}
+\subfile{sections/sect1}
+
+\begin{comment}
+\subsection{Un sous-chapitre}
+…
+\paragraph{Sous-partie de sous-chapitre}
+…
+
+\subsection{Autre sous-chapitre}
+…
+\end{comment}
+
+\section*{Conclusion}
+% La Conclusion → fichier "conclusion.tex"
+\subfile{sections/conclus}
+
+%% FIN DU DOCUMENT
+\end{document}
