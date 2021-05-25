@@ -10,7 +10,7 @@ Exemples :
 | ---   | --- |
 | en-GB | Anglais britannique |
 | en-US | Anglais américain |
-| fr-BE | Français belge <!-- = Wallon ? --> |
+| fr-BE | Français belge |
 | fr-CA | Québécois (français canadien) |
 | fr-CH | Romand (français de Suisse) |
 | fr-FR | Français de France |
