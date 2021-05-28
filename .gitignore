@@ -1,7 +1,11 @@
-# LaTex compilator env
-*.toc
 # Mac OS finder
 .DS_Store
+
 # Python exec env
 __pycache__
+
+# TeX/LaTeX files
+*.aux
+*.log
+*.syntex.gz
 
