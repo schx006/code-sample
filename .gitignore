@@ -11,4 +11,5 @@ __pycache__
 *.blg
 *.log
 *.run.xml
+*.sta
 *.syntex.gz
