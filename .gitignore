@@ -6,9 +6,12 @@ __pycache__
 
 # TeX/LaTeX compiler auxiliary files
 *.aux
+*.acn
 *.bbl
 *.bcf
 *.blg
+*.blo
+*.ist
 *.log
 *.run.xml
 *.sta
