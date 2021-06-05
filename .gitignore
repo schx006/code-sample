@@ -4,7 +4,21 @@
 # Python exec env
 __pycache__
 
-# TeX/LaTeX files
+# TeX/LaTeX compiler auxiliary files
 *.aux
+*.acn
+*.acr
+*.alg
+*.bbl
+*.bcf
+*.blg
+*.glg
+*.glo
+*.gls
+*.ist
 *.log
+*.sta
+*.toc
+*.run.xml
 *.syntex.gz
+*.syntex
