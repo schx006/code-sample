@@ -54,7 +54,7 @@
 
 |  | Bonus | Malus |
 | --- | --- | --- |
-| engagement de respect de la vie privée               | Ⓓ 👍👍 |  |
+| engagement au respect de la vie privée               | Ⓓ 👍👍 |  |
 | suspiscion de manquement au respect de la vie privée |  | Ⓓ 👎 |
 | manquement avéré au respect de la vie privée         |  | Ⓓ 👎👎 |
 
