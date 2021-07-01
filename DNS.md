@@ -32,7 +32,7 @@
 |  Fournisseur  | IPv4 primaire | IPv4 seconaire | IPv6 primaire | IPv6 seconaire | _ma_ cote d'amour |
 | --- | --- | --- | --- | --- | --- |
 |             |  |  |  |  |  |
-| Gandi       |  | 217.70.177.40 |  |  | Ⓣ 👍👍 |
+| Gandi       | serveurs redondants | serveurs redondants | serveurs redondants | serveurs redondants | Ⓣ 👍👍 |
 |             |  |  |  |  |  |
 | Ionos (1&1) |  |  |  |  |  |
 |             |  |  |  |  |  |
