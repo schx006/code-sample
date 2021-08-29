@@ -1,4 +1,4 @@
-# Backup a VPS on a S3 Object Storage server with _Duplicity_
+# Encrypted backup of a VPS¹ on a S3 Object Storage server with _Duplicity_
 
 ### Docs
 
@@ -9,7 +9,7 @@
 
 If needed, create `/root/bin` directory with `drwx------` perms.   
 Load `backup.sh` and `duplicity.conf` files on VPS.
-As 'root', exec the belows commands:   
+As 'root', exec the belows commands²:   
 ``` sh
 apt-get update
 apt-get upgrade
@@ -55,3 +55,8 @@ tar -czvf /root-$HOSTNAME.tgz --exclude='.bash_history' --exclude='.cache' /root
 scp -P sshPort user@vpsName.domainName.tld:/root-vpsName.tgz /path/to/USB/StorageDevice
 ```
 … then, keep the USB storage device in a secure place. Remove the `/root-*.tgz` file on VPS.
+
+---
+
+¹ VPS or other Linux computer. _Duplicity_ can also run on MacOS computer.   
+² Users must modify the install command if they are using an OS distribution other than Debian Linux family.   
