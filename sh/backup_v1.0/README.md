@@ -1,4 +1,4 @@
-# Encrypted backup of a VPS¹ on a S3 Object Storage server with _Duplicity_
+# Secure encrypted backup of a VPS¹ on a S3 Object Storage server using _Duplicity_
 
 ### Docs
 
