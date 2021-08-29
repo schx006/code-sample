@@ -4,6 +4,7 @@
 
 * _Duplicity_ man page
 * [_Duplicity_ on Debian Wiki](https://wiki.debian.org/Duplicity)
+* _gpg_ man page
 
 ### HowTo
 
