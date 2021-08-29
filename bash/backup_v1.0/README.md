@@ -25,7 +25,7 @@ gpg --gen-key
 
 ``` 
 
-Edit `/root/.duplicity.conf` with _ad-hoc_ parameters…
+Edit `/root/.duplicity.conf` with ad-hoc parameters…
 * S3 server name
 * S3 bucket name
 * IAM access key Id.
