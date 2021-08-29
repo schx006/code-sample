@@ -14,7 +14,9 @@ As 'root', run the commands² below:
 ``` sh
 apt-get update
 apt-get upgrade
-aptget install duplicity gpg
+aptget install duplicity gpg python-pip
+
+pip install boto
 
 cp /path/to/Downloads/backup.sh /root/bin/
 chmod 700 /root/bin/backup.sh
