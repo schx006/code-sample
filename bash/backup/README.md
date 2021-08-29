@@ -37,7 +37,9 @@ Run the bachup task:
 
 When everything is OK, you can schedule the `/root/bin/backup.sh` command with `crontab -e`.
 
-DON'T FORGET to backup GnuPG keys and the other backup parameter in a independant way to be able to restore the backup datas.
+---
+
+**DON'T FORGET** to backup GnuPG keys and the other backup parameters in a independant way to be able to restore the backup datas.
 
 For instance, using an USB storage device:   
 on the VPS,   
