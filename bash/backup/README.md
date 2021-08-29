@@ -1,9 +1,11 @@
-# HowTo
+# Backup a VPS on a S3 Object Storage server with _Duplicity_
 
-Docs:
+### Docs
+
 * _Duplicity_ man page
 * [_Duplicity_ on Debian Wiki](https://wiki.debian.org/Duplicity)
 
+### HowTo
 
 If needed, create `/root/bin` directory with `drwx------` perms.   
 Load `backup.sh` and `duplicity.conf` files on VPS.
@@ -33,3 +35,17 @@ Run the bachup task:
 /root/bin/backup.sh
 ```
 
+When everything is OK, you can schedule the `/root/bin/backup.sh` command with `crontab -e`.
+
+DON'T FORGET to backup GnuPG keys and the other backup parameter in a independant way to be able to restore the backup datas.
+
+For instance, using an USB storage device:   
+on the VPS,   
+``` sh
+tar -czvf /root-$HOSTNAME.tgz --exclude='.bash_history' --exclude='.cache' /root
+```
+… on the local computer,   
+``` sh
+scp -P sshPort user@vpsName.domainName.tld:/root-vpsName.tgz /path/to/USB/StorageDevice
+```
+… then, keep the USB storage device in a secure place. Remove the `/root-*.tgz` file on VPS.
