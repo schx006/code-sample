@@ -9,7 +9,7 @@
 
 If needed, create `/root/bin` directory with `drwx------` perms.   
 Load `backup.sh` and `duplicity.conf` files on VPS.
-As 'root', exec the belows commands²:   
+As 'root', run the commands² below:   
 ``` sh
 apt-get update
 apt-get upgrade
