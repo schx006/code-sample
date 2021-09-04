@@ -21,7 +21,7 @@
 # loop on directories
 echo -n "---- Starting the \"Full backup\" of $HOSTNAME ---- "; date
 for i in $BACKDIRS ; do
-    echo "--> Backup of directory $i"
+    echo -e "\n==>   Backup of directory $i"
     $DUP_EXEC $DUP_PARAM $i $TARGET_URL$i
     $DUP_CLEANUP $TARGET_URL$i
 done
