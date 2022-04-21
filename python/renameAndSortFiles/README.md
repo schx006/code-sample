@@ -31,7 +31,13 @@ This Python script will do the job for me.
 
 # Warning!
 
-The script…
+This script read the name of the files in the directory `fileToSort` **without any control**!
+
+It is the user's responsibility to check that the files to be sorted are all of the same type (in this case, only images in JPEG format).
+
+Renaming files with an incorrect file type extension may result in data loss.
+
+This script is provided without warranty. The author cannot be held responsible for any damage.
 
 # Customise it.
 
