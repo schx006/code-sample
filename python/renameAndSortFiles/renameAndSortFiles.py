@@ -3,6 +3,7 @@
 
 # File:     renameSortedFiles.py
 # Author:   Xavier Schoepfer
+# License:  GNU General Public License v3.0
 
 
 #   Cette fonction copie des fichiers d'images JPEG d'un répertoire 
