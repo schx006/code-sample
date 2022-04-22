@@ -3,7 +3,7 @@
 
 A pictures gallery in a directory usualy contains a great numer of files wich names look random, even if the names follow the same pattern…
 
-In my situation, I had a gallery with 293 JPEG pictures. the name pattern was:
+In my situation, I had a gallery with 293 JPEG pictures. The name pattern was:
 - the string `IMG_`,
 - a 4 digits number, with one (or more) leading zeros if necessary: _ie._ 0243,
 - the `.jpeg` suffix.
