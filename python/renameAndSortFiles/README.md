@@ -16,7 +16,7 @@ This Python script will do the job for me.
 
 # How to…
 
-1. The script needs the two subdirectories `filesToSort` and `sortedFiles` in the same directory as itself (the _working directory_).
+1. The script needs two subdirectories `filesToSort` and `sortedFiles` in the same directory as itself (the _working directory_).
 2. Copy (or move) the picture files into the `filesToSort` subdirectory.  
    The `sortedFiles` subdirectory must be empty.  
    ![Directory screenshot](https://github.com/schx006/code-sample/blob/main/pictures/filesToSort_screenshot.png)
