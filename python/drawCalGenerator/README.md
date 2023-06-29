@@ -19,7 +19,8 @@ Ce programme liste les dates de tirage du Loto®[^1] (ou de l'Euromillions®[^2]
    ⫶
    ```
 3. Pour obtenir la liste des tirages d'Euromillions® (au lieu du loto®), et vive-versa,
-   déplacer le `#` de commentaire dans les variables globales pour intervertir les valeurs de `isoDrawDay`.    
+   éditer le fichier du progrmamme `drawCalGenerator.py` et, dans les variables globales,
+   intervertir les valeurs de `isoDrawDay` par le déplacement du `#` de commentaire en début de ligne.    
    Pour les dates de tirage du Loto® :
    ```python
    ⫶
