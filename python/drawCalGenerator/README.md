@@ -5,7 +5,7 @@ Ce programme liste les dates de tirage du Loto®[^1] (ou de l'Euromillions®[^2]
 Ces dates sont représentée au format **ISO 8601** :
 
 >
->   AAA-MM-JJ
+>   AAAA-MM-JJ
 >
 
 ### Utilisation du script
