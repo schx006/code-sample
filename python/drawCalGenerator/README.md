@@ -2,6 +2,12 @@
 
 Ce programme liste les dates de tirage du Loto®[^1] (ou de l'Euromillions®[^2]) pour une année de référence donnée.
 
+Ces dates sont représentée au format **ISO 8601** :
+
+>
+>   AAA-MM-JJ
+>
+
 ### Utilisation du script
 
 1. Pour créer un fichier des dates de tirage `drawCalendar.txt`, utiliser la commande :    
